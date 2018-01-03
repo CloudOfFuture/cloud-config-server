@@ -12,9 +12,14 @@ spring:
     name: cloud-config-server
   boot:
     admin:
-    url: http://localhost:8090
-    username: user
-    password: pass
+      url: http://localhost:8090
+      username: user
+      password: pass
+  rabbitmq:
+    port: 5672
+    username: guest
+    password: guest
+    host: 127.0.0.1
 eureka:
   client:
     service-url:
